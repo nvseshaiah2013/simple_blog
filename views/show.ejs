@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+<div class="ui main container">
+<div class="ui link cards">
+    <div class="ui centered card">
+        <div class="image">
+            <img src="<%= Blogs.image %>">
+        </div>
+        <div class="content">
+            <div class="header">
+                <%= Blogs.title %>
+            </div>
+            <div class="meta">
+                <a>
+                    <%= Blogs.created.toDateString() %></a>
+            </div>
+            <div class="description">
+                <%= Blogs.body %>
+            </div>
+        </div>
+        <div class="extra content">
+
+            <a href="/blogs/<%= Blogs._id %>/edit" class="right floated ui button orange inverted">Edit</a>
+            <form id="dete" class="form ui" action="/blogs/<%= Blogs._id %>?_method=DELETE" method="POST">
+                <button class="ui button red inverted">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<% include ./partials/footer %>

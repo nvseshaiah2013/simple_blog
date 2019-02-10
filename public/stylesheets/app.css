@@ -1,0 +1,17 @@
+.code
+{
+    font-size:1.5em !important;
+}
+
+.container.main
+{
+    margin-top:6.0em;
+}
+h1.ui.header.large{
+    margin-top:4.0em;
+}
+
+#dete
+{
+    display: inline;
+}
